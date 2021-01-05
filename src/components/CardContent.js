@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Loader from './Loader';
 
 export class CardContent extends Component {
-    state= {}
+    state= {
+        loading: true
+    }
 
     async componentDidMount() {
         const { id, title, body } = this.props.location.state;
@@ -12,12 +15,13 @@ export class CardContent extends Component {
         const newData = data.filter((value) => {
             return value.postId === id;
         });
-        this.setState({commentData: newData});
+        this.setState({commentData: newData, loading: false});
     }
 
     render() {
         return (
             <>
+                {this.state.loading && <Loader />}
                 <div className='go_back'>
                     <Link to='/'>go back</Link>
                 </div>
