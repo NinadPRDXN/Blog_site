@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import CardContent from './components/CardContent';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={App} exact/>
+      <Route path="/cardcontent/" component={CardContent} exact />
+    </Switch>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 

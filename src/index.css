@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,104 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.blogs a {
+  width: 32%;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+.blogs h2 span {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+
+.blog_title {
+  text-transform: capitalize;
+}
+
+.blog_title_name {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.go_back {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.go_back a {
+  padding: 10px;
+  border-radius: 9999px;
+  margin-right: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog_heading {
+  padding: 13px 0;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.blog_content {
+  background-color: #a9a9a9;
+  text-align: center;
+}
+
+.comments_heading {
+  display: block;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.comments {
+  padding: 20px;
+  border-top: 1px solid #808080;
+  list-style-type: none;
+}
+
+.comments h4 {
+  text-decoration: underline;
+}
+
+.comments li {
+  margin-bottom: 20px;
 }
